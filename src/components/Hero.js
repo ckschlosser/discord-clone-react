@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import LeftHero from "./LeftHero";
+import LeftHero from "./icons/LeftHero";
 
 function Hero() {
   return (
@@ -27,7 +27,7 @@ function Hero() {
             Download for Mac
           </button>
           <button className="mt-6 rounded-3xl py-4 px-8 bg-darkGrey text-xl leading-6">
-            Open Discord in your Browser
+            Open Discord in your browser
           </button>
         </div>
       </div>
