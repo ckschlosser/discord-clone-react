@@ -8,6 +8,7 @@ function ServerImg() {
       viewBox="0 0 678 440"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="mt-6"
     >
       <g clip-path="url(#clip0)">
         <rect x="181" y="40" width="427" height="328" rx="8" fill="#292841" />

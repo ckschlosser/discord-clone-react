@@ -8,6 +8,7 @@ function VoiceVideoImg() {
       viewBox="0 0 874 530"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="mt-6"
     >
       <mask
         id="mask0"
