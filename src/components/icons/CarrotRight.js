@@ -1,8 +1,8 @@
 import React from "react";
 
-function CarrotRight({ width, height, stroke }) {
+function CarrotRight({ width, height, stroke, className }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" className="-rotate-90 ml-2">
+    <svg width="24" height="24" viewBox="0 0 24 24" className={className}>
       <path
         fill="currentColor"
         fill-rule="evenodd"
