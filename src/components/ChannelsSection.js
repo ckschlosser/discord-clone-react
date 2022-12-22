@@ -3,14 +3,20 @@ import ChannelsImg from "./icons/ChannelsImg";
 
 function ChannelsSection() {
   return (
-    <section className="container grid px-6 py-14 bg-lightGrey">
-      <ChannelsImg />
-      <h2 className="text-xl mt-5">Where hanging out is easy</h2>
-      <p className="mt-6 leading-7">
-        Grab a seat in a voice channel when you’re free. Friends in your server
-        can see you’re around and instantly pop in to talk without having to
-        call.
-      </p>
+    <section className="container grid gap-x-5 md:grid-cols-8 px-6 py-14 md:px-10 md:py-20 bg-lightGrey">
+      <div className="mt-6 md:mt-0 md:col-span-4 md:col-start-5">
+        <ChannelsImg />
+      </div>
+      <div className="md:col-span-4 md:col-start-1 md:row-start-1">
+        <h2 className="text-xl md:text-5xl leading-6 md:leading-tight mt-5 md:mt-0">
+          Where hanging out is easy
+        </h2>
+        <p className="mt-6 leading-7">
+          Grab a seat in a voice channel when you’re free. Friends in your
+          server can see you’re around and instantly pop in to talk without
+          having to call.
+        </p>
+      </div>
     </section>
   );
 }

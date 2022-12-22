@@ -9,10 +9,9 @@ import MobileNavMA from "./components/MobileNavMA";
 const App = () => {
   return (
     <div className="font-cabin">
-      <MobileNavSafety />
-      {/* <Hero />
+      <Hero />
       <Sections />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
