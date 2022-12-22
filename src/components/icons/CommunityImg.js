@@ -8,7 +8,6 @@ function CommunityImg() {
       viewBox="0 0 678 440"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="mt-6"
     >
       <rect x="216" y="18" width="270" height="369" rx="8" fill="#292841" />
       <rect

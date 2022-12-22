@@ -3,7 +3,7 @@ import DiscordImg from "./icons/DiscordImg";
 
 function Nav() {
   return (
-    <nav className="container mx-auto px-6 h-20 flex justify-between items-center bg-heroBlue z-30 font-cabin">
+    <nav className="container min-w-full px-6 md:px-10 h-20 flex justify-between items-center bg-heroBlue z-30 font-cabin">
       <div className="flex">
         <a href="/#">
           <DiscordImg fill="white" />

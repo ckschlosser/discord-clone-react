@@ -4,35 +4,36 @@ import Flag from "./images/flag-usa.png";
 
 function Footer() {
   return (
-    <div className="pt-20 pb-16 px-6 bg-darkGrey">
-      <div className="mb-14 flex flex-col gap-y-5">
-        <h2 className="text-mainBlue font-sans text-[32px] font-black leading-8">
-          IMAGINE A PLACE
-        </h2>
-        <div className="flex text-white text-sm">
-          <div className="flex items-center">
-            <img src={Flag} alt="Flag" className="mr-2 w-6 h-4" />
-            <p>English, USA</p>
-          </div>
+    <div className="px-6 py-14 md:px-10 md:py-20 pt-20 pb-16 bg-darkGrey">
+      <div className="container grid gap-x-5 grid-cols-4 md:grid-cols-8">
+        <div className="mb-14 flex flex-col gap-y-5 col-span-full md:col-span-4">
+          <h2 className="text-mainBlue font-sans text-[32px] md:text-4xl md:mr-4 font-black md:leading-8">
+            IMAGINE A PLACE
+          </h2>
+          <div className="flex text-white text-sm">
+            <div className="flex items-center">
+              <img src={Flag} alt="Flag" className="mr-2 w-6 h-4" />
+              <p>English, USA</p>
+            </div>
 
-          <svg
-            width="7"
-            height="5"
-            xmlns="http://www.w3.org/2000/svg"
-            className="flex self-center ml-2"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <path d="M0 0h7v5H0z" />
-              <path d="M0 1l3.488 2.737L6.975 1" stroke="#FFF" />
-            </g>
-          </svg>
+            <svg
+              width="7"
+              height="5"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex self-center ml-2"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h7v5H0z" />
+                <path d="M0 1l3.488 2.737L6.975 1" stroke="#FFF" />
+              </g>
+            </svg>
+          </div>
+          <div>
+            <SocialMediaImg />
+          </div>
         </div>
-        <div>
-          <SocialMediaImg />
-        </div>
-      </div>
-      <div className="grid grid-cols-4 gap-x-4 border-b-[1px] border-mainBlue">
-        <div className="mb-10 pt-2 col-span-2">
+
+        <div className="mb-10 pt-2">
           <h4 className="text-heroBlue">Product</h4>
           <a href="/download" className="block text-white mt-2">
             Download
@@ -44,7 +45,7 @@ function Footer() {
             Status
           </a>
         </div>
-        <div className="mb-10 pt-2 col-span-2">
+        <div className="mb-10 pt-2 col-start-3 md:col-start-7">
           <h4 className="text-heroBlue">Company</h4>
           <a href="/download" className="block text-white mt-2">
             About
@@ -59,7 +60,8 @@ function Footer() {
             Newroom
           </a>
         </div>
-        <div className="mb-10 pt-2 col-span-2">
+
+        <div className="mb-10 pt-2 md:row-start-2 md:col-start-5">
           <h4 className="text-heroBlue">Resources</h4>
           <a href="/college" className="block text-white mt-2">
             College
@@ -86,7 +88,8 @@ function Footer() {
             Creators
           </a>
         </div>
-        <div className="mb-10 pt-2 col-span-2">
+
+        <div className="mb-10 pt-2 col-start-3 md:col-start-7 md:col-span-2">
           <h4 className="text-heroBlue">Policies</h4>
           <a href="/download" className="block text-white mt-2">
             Terms
@@ -111,7 +114,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="flex justify-between mt-8">
+      <div className="flex justify-between pt-8 border-t-[1.5px] border-heroBlue">
         <svg width="124" height="34" viewBox="0 0 124 34" className="">
           <g fill="white">
             <path d="M26.0015 6.9529C24.0021 6.03845 21.8787 5.37198 19.6623 5C19.3833 5.48048 19.0733 6.13144 18.8563 6.64292C16.4989 6.30193 14.1585 6.30193 11.8336 6.64292C11.6166 6.13144 11.2911 5.48048 11.0276 5C8.79575 5.37198 6.67235 6.03845 4.6869 6.9529C0.672601 12.8736 -0.41235 18.6548 0.130124 24.3585C2.79599 26.2959 5.36889 27.4739 7.89682 28.2489C8.51679 27.4119 9.07477 26.5129 9.55525 25.5675C8.64079 25.2265 7.77283 24.808 6.93587 24.312C7.15286 24.1571 7.36986 23.9866 7.57135 23.8161C12.6241 26.1255 18.0969 26.1255 23.0876 23.8161C23.3046 23.9866 23.5061 24.1571 23.7231 24.312C22.8861 24.808 22.0182 25.2265 21.1037 25.5675C21.5842 26.5129 22.1422 27.4119 22.7621 28.2489C25.2885 27.4739 27.8769 26.2959 30.5288 24.3585C31.1952 17.7559 29.4733 12.0212 26.0015 6.9529ZM10.2527 20.8402C8.73376 20.8402 7.49382 19.4608 7.49382 17.7714C7.49382 16.082 8.70276 14.7025 10.2527 14.7025C11.7871 14.7025 13.0425 16.082 13.0115 17.7714C13.0115 19.4608 11.7871 20.8402 10.2527 20.8402ZM20.4373 20.8402C18.9183 20.8402 17.6768 19.4608 17.6768 17.7714C17.6768 16.082 18.8873 14.7025 20.4373 14.7025C21.9717 14.7025 23.2271 16.082 23.1961 17.7714C23.1961 19.4608 21.9872 20.8402 20.4373 20.8402Z"></path>
