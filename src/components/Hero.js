@@ -8,19 +8,19 @@ function Hero() {
   return (
     <header className="bg-heroBlue z-0 relative overflow-x-hidden">
       <Nav />
-      <div className="text-white container grid gap-x-5 md:grid-cols-8  px-6 py-14 md:px-10 md:py-20">
-        <div className="col-span-4 md:col-span-5">
-          <h1 className="text-3xl md:text-[56px] font-sans font-black leading-[85%] md:leading-[95%] ">
+      <div className="text-white container grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 px-6 py-14 md:px-10 md:py-20 lg:py-[120px] lg:min-w-full">
+        <div className="col-span-4 md:col-span-5 lg:col-start-3 lg:col-span-8">
+          <h1 className="text-3xl md:text-[56px] font-sans font-black leading-[85%] md:leading-[95%] lg:text-center">
             IMAGINE A PLACE...
           </h1>
-          <p className="mt-6 md:mt-10 leading-6 md:leading-7">
+          <p className="mt-6 md:mt-10 leading-6 md:leading-7 lg:text-xl lg:leading-9 lg:text-center">
             ...where you can belong to a school club, a gaming group, or a
             worldwide art community. Where just you and a handful of friends can
             spend time together. A place that makes it easy to talk every day
             and hang out more often.
           </p>
         </div>
-        <div className="container flex md:row-start-2 col-span-4">
+        <div className="container flex md:row-start-2 col-span-4 lg:col-start-3 lg:col-span-8 lg:justify-center">
           <button className="flex text-left items-center mt-6 rounded-3xl py-4 px-8 text-xl bg-white text-black leading-6">
             <svg width="24" height="24" viewBox="0 0 24 24" className="mr-2">
               <g fill="currentColor">
