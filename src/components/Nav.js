@@ -9,11 +9,34 @@ function Nav() {
           <DiscordImg fill="white" />
         </a>
       </div>
+      <ul className="flex text-white gap-x-12">
+        <a href="/#">
+          <li>Download</li>
+        </a>
+        <a href="/#">
+          <li>Nitro</li>
+        </a>
+        <a href="/#">
+          <li>Discover</li>
+        </a>
+        <a href="/#">
+          <li>Safety</li>
+        </a>
+        <a href="/#">
+          <li>Support</li>
+        </a>
+        <a href="/#">
+          <li>Blog</li>
+        </a>
+        <a href="/#">
+          <li>Careers</li>
+        </a>
+      </ul>
       <div className="flex items-center">
         <button className="py-[0.6rem] px-4 mr-4 rounded-3xl bg-white text-black text-sm font-extralight">
           Login
         </button>
-        <svg width="40" height="40" viewBox="0 0 40 40">
+        <svg width="40" height="40" viewBox="0 0 40 40" className="lg:hidden">
           <path
             fill="white"
             fillRule="evenodd"

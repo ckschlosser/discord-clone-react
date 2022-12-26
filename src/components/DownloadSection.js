@@ -2,7 +2,7 @@ import React from "react";
 
 function DownloadSection() {
   return (
-    <section className="container grid overflow-x-hidden px-6 md:px-10 pb-14 md:pb-20 bg-lightGrey">
+    <section className="container grid overflow-x-hidden px-6 md:px-10 pb-14 md:pb-20 lg:pb-[120px] bg-lightGrey">
       <div className="md:absolute overflow-x-hidden justify-self-center">
         <svg
           width="531"

@@ -4,9 +4,9 @@ import Flag from "./images/flag-usa.png";
 
 function Footer() {
   return (
-    <div className="px-6 py-14 md:px-10 md:py-20 pt-20 pb-16 bg-darkGrey">
-      <div className="container grid gap-x-5 grid-cols-4 md:grid-cols-8">
-        <div className="mb-14 flex flex-col gap-y-5 col-span-full md:col-span-4">
+    <div className="px-6 py-14 md:px-10 md:pt-20 md:pb-16 pt-20 pb-16 bg-darkGrey">
+      <div className="container grid gap-x-5 grid-cols-4 md:grid-cols-8 lg:grid-cols-12 md:min-w-full">
+        <div className="mb-14 flex flex-col gap-y-5 col-span-full md:col-span-3">
           <h2 className="text-mainBlue font-sans text-[32px] md:text-4xl md:mr-4 font-black md:leading-8">
             IMAGINE A PLACE
           </h2>
@@ -32,6 +32,7 @@ function Footer() {
             <SocialMediaImg />
           </div>
         </div>
+        <div className="md:col-start-4 md:row-span-full hidden md:block"></div>
 
         <div className="mb-10 pt-2">
           <h4 className="text-heroBlue">Product</h4>
@@ -57,11 +58,11 @@ function Footer() {
             Branding
           </a>
           <a href="/status" className="block text-white mt-2">
-            Newroom
+            Newsroom
           </a>
         </div>
 
-        <div className="mb-10 pt-2 md:row-start-2 md:col-start-5">
+        <div className="mb-10 pt-2 row-start-3 md:row-start-2 md:col-start-5 lg:col-start-9 lg:row-start-1">
           <h4 className="text-heroBlue">Resources</h4>
           <a href="/college" className="block text-white mt-2">
             College
@@ -89,7 +90,7 @@ function Footer() {
           </a>
         </div>
 
-        <div className="mb-10 pt-2 col-start-3 md:col-start-7 md:col-span-2">
+        <div className="mb-10 pt-2 col-start-3 md:col-start-7 col-span-2 lg:col-start-11 lg:row-start-1">
           <h4 className="text-heroBlue">Policies</h4>
           <a href="/download" className="block text-white mt-2">
             Terms
