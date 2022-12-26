@@ -1,10 +1,10 @@
 import React from "react";
 
-function LeftHero() {
+function LeftHero(width, height) {
   return (
     <svg
-      width="auto"
-      height="auto"
+      width={width}
+      height={height}
       viewBox="0 0 689 352"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -3,8 +3,8 @@ import React from "react";
 function RightHero(className) {
   return (
     <svg
-      width="auto"
-      height="auto"
+      width="615"
+      height="360"
       viewBox="0 0 615 360"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

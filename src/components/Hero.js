@@ -6,9 +6,9 @@ import HeroBG from "./icons/HeroBG";
 
 function Hero() {
   return (
-    <header className="bg-heroBlue z-0 relative overflow-x-hidden">
+    <header className="bg-heroBlue z-0 relative overflow-hidden md:min-h-[708px]">
       <Nav />
-      <div className="text-white container grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 px-6 py-14 md:px-10 md:py-20 lg:py-[120px] lg:min-w-full">
+      <div className="text-white container grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 px-6 py-14 md:px-10 md:py-20 lg:py-[120px] min-w-full">
         <div className="col-span-4 md:col-span-5 lg:col-start-3 lg:col-span-8">
           <h1 className="text-3xl md:text-[56px] font-sans font-black leading-[85%] md:leading-[95%] lg:text-center">
             IMAGINE A PLACE...
@@ -30,17 +30,17 @@ function Hero() {
             </svg>
             Download from Google Play
           </button>
-          {/* <button className="mt-6 rounded-3xl py-4 px-8 bg-darkGrey text-xl leading-6">
-            Open Discord in your browser
-          </button> */}
         </div>
       </div>
 
-      {/* Need to have this bg-image centered at the bottom of the hero section <div className="absolute bottom-0 inset-x-0 -z-20">
+      <div className="hidden md:absolute md:block top-20 bottom-0 left-2/4 ml-[-1320px] lg:ml-[-1280px] w-full h-full -z-20">
         <HeroBG />
-      </div> */}
-      <div className="block w-full max-w-[880px] relative z-10 -ml-20 md:hidden">
-        <LeftHero />
+      </div>
+      <div className="hidden md:block md:absolute bottom-0 left-2/4 ml-[-70px] lg:ml-[370px]">
+        <RightHero />
+      </div>
+      <div className="block w-full max-w-[880px] relative z-10 -ml-20 md:hidden lg:block lg:absolute lg:bottom-0 lg:left-2/4 lg:ml-[-1030px] lg:max-w-none lg:w-[689px] lg:h-[352px]">
+        <LeftHero width="auto" height="auto" />
       </div>
     </header>
   );
