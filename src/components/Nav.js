@@ -9,7 +9,7 @@ function Nav() {
           <DiscordImg fill="white" />
         </a>
       </div>
-      <ul className="flex text-white gap-x-12">
+      <ul className="hidden lg:flex lg:text-white lg:gap-x-12">
         <a href="/#">
           <li>Download</li>
         </a>

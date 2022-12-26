@@ -3,7 +3,7 @@ import CommunityImg from "./icons/CommunityImg";
 
 function CommunitySection() {
   return (
-    <section className="container grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 px-6 py-14 md:px-10 md:py-20 lg:py-[120px] bg-white">
+    <section className="grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 px-6 py-14 md:px-10 md:py-20 lg:py-[120px] bg-white xl:items-center xl:mx-auto xl:container">
       <div className="mt-6 md:mt-0 md:col-span-4 lg:col-span-7">
         <CommunityImg />
       </div>
