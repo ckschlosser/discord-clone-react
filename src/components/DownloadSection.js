@@ -36,7 +36,7 @@ function DownloadSection() {
           Ready to start your journey?
         </h2>
         <div className="place-self-center">
-          <button className="flex text-left sm:justify-center mt-10 mr-0 rounded-3xl py-4 px-8 text-xl bg-mainBlue text-white leading-6">
+          <button className="flex text-left sm:justify-center mt-10 mr-0 rounded-3xl py-4 px-8 text-xl bg-mainBlue text-white leading-6 md:hover:shadow-lg md:hover:duration-500 md:hover:bg-mainBlue/80">
             <svg width="24" height="24" viewBox="0 0 24 24" className="mr-2">
               <g fill="currentColor">
                 <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>

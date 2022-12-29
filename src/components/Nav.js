@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import DiscordImg from "./icons/DiscordImg";
+import MobileNav from "./MobileNav";
 
 function Nav() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  let menu;
+  let menuMask;
+
+  if (showMenu) {
+    menu = <MobileNav />;
+    menuMask = (
+      <div
+        className="z-50 top-0 left-0 bg-black/30 w-full h-full fixed"
+        onClick={() => setShowMenu(false)}
+      ></div>
+    );
+  }
+
   return (
     <nav className="container min-w-full px-6 md:px-10 h-20 flex justify-between items-center bg-heroBlue z-30 font-cabin">
       <div className="flex">
@@ -33,10 +49,16 @@ function Nav() {
         </a>
       </ul>
       <div className="flex items-center">
-        <button className="py-[0.6rem] px-4 mr-4 rounded-3xl bg-white text-black text-sm font-extralight">
+        <button className="hidden py-[0.6rem] px-4 mr-4 rounded-3xl bg-white text-black text-sm font-extralight lg:block">
           Login
         </button>
-        <svg width="40" height="40" viewBox="0 0 40 40" className="lg:hidden">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          className="lg:hidden cursor-pointer"
+          onClick={() => setShowMenu(true)}
+        >
           <path
             fill="white"
             fillRule="evenodd"
@@ -45,6 +67,8 @@ function Nav() {
           ></path>
         </svg>
       </div>
+      {menuMask}
+      {menu}
     </nav>
   );
 }

@@ -21,7 +21,7 @@ function Hero() {
           </p>
         </div>
         <div className="container flex md:row-start-2 col-span-4 lg:col-start-3 lg:col-span-8 lg:justify-center">
-          <button className="flex text-left items-center mt-6 rounded-3xl py-4 px-8 text-xl bg-white text-black leading-6">
+          <button className="flex text-left items-center mt-6 rounded-3xl py-4 px-8 text-xl bg-white text-black leading-6 md:hover:duration-500 md:hover:text-heroBlue md:hover:shadow-lg">
             <svg width="24" height="24" viewBox="0 0 24 24" className="mr-2">
               <g fill="currentColor">
                 <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
