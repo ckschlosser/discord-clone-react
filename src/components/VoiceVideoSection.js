@@ -1,5 +1,5 @@
 import React from "react";
-import VoiceVideo from "./icons/VoiceVideoImg";
+import VoiceVideo from "./images/voice-video.png";
 
 function VoiceVideoSection() {
   return (
@@ -15,8 +15,8 @@ function VoiceVideoSection() {
             have a drawing session with screen share.
           </p>
         </div>
-        <div className="mt-6 md:col-span-full">
-          <VoiceVideo />
+        <div className="mt-6 md:col-span-full lg:justify-self-center">
+          <img src={VoiceVideo} alt="Voice and Video chat section" />
         </div>
       </div>
     </section>

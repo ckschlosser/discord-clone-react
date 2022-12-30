@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import DiscordImg from "./icons/DiscordImg";
 import CloseX from "./icons/CloseImg";
 import CarrotRight from "./icons/CarrotRight";
 import MobileNavBtn from "./icons/MobileNavBtn";
+import MobileNavSafety from "./MobileNavSafety";
+import MobileNavMA from "./MobileNavMA";
 
 function MobileNav() {
+  const [showSafety, setShowSafety] = useState(false);
+  const [showModAcademy, setShowModAcademy] = useState(false);
+  let safety;
+  let modAcademy;
+
+  if (showSafety) {
+    safety = <MobileNavSafety />;
+  }
+  if (showModAcademy) {
+    modAcademy = <MobileNavMA />;
+  }
+
   return (
     <div className="fixed box-border w-[330px] overflow-hidden z-50 bg-white h-screen rounded-tl-lg rounded-bl-lg pl-6 pt-6 pr-12 pb-[120px] overflow-y-scroll top-0 right-0">
       <div className="w-full">
@@ -31,12 +45,17 @@ function MobileNav() {
           <a
             href="#"
             className="flex items-center py-2 px-4 text-black hover:underline"
+            onClick={() => setShowSafety(true)}
           >
             <div className="flex">Safety</div>
 
             <CarrotRight className="-rotate-90 ml-2" />
           </a>
-          <a href="#" className="flex py-2 px-4 text-black hover:underline">
+          <a
+            href="#"
+            className="flex py-2 px-4 text-black hover:underline"
+            onClick={() => setShowModAcademy(true)}
+          >
             <div className="flex">Mod Academy</div>
             <CarrotRight className="-rotate-90 ml-2" />
           </a>
@@ -51,13 +70,12 @@ function MobileNav() {
           </a>
         </nav>
 
-        <button className="fixed top-0 right-0 m-6 z-[80]">
-          <CloseX />
-        </button>
         <div className="fixed right-0 bottom-0 p-6 h-[120px] w-[330px] flex justify-center flex-col z-[80] bg-white rounded-bl-lg">
           <MobileNavBtn />
         </div>
       </div>
+      {safety}
+      {modAcademy}
     </div>
   );
 }
