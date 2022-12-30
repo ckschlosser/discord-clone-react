@@ -1,12 +1,12 @@
 import React from "react";
-import ChannelsImg from "./icons/ChannelsImg";
+import ChannelImg from "./images/channel-img.png";
 
 function ChannelsSection() {
   return (
     <section className="px-6 py-14 md:px-10 md:py-20 lg:py-[120px] bg-lightGrey">
       <div className="grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 xl:container xl:mx-auto xl:items-center">
         <div className="mt-6 md:mt-0 md:col-span-4 md:col-start-5 lg:col-start-6 lg:col-span-full">
-          <ChannelsImg />
+          <img src={ChannelImg} alt="Showing Channel example" />
         </div>
         <div className="md:col-span-4 md:col-start-1 md:row-start-1">
           <h2 className="text-xl md:text-5xl leading-6 md:leading-tight mt-5 md:mt-0">

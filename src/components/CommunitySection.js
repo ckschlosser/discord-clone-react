@@ -1,11 +1,11 @@
 import React from "react";
-import CommunityImg from "./icons/CommunityImg";
+import CommunityImg from "./images/community.png";
 
 function CommunitySection() {
   return (
     <section className="grid gap-x-5 md:grid-cols-8 lg:grid-cols-12 px-6 py-14 md:px-10 md:py-20 lg:py-[120px] bg-white xl:items-center xl:mx-auto xl:container">
       <div className="mt-6 md:mt-0 md:col-span-4 lg:col-span-7">
-        <CommunityImg />
+        <img src={CommunityImg} alt="Community section" />
       </div>
       <div className="md:col-start-5 md:col-span-4 lg:col-start-9">
         <h2 className="text-xl md:text-5xl leading-6 md:leading-tight mt-5 md:mt-0">

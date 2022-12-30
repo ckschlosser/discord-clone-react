@@ -1,14 +1,21 @@
-import React from "react";
-import DiscordImg from "./icons/DiscordImg";
+import React, { useState } from "react";
 import CloseX from "./icons/CloseImg";
 import CarrotRight from "./icons/CarrotRight";
 import MobileNavBtn from "./icons/MobileNavBtn";
+import MobileNav from "./MobileNav";
 
 function MobileNavMA() {
+  const [closeModAcademy, setCloseModAcademy] = useState(false);
+
+  let back;
+
+  if (closeModAcademy) {
+    back = <MobileNav />;
+  }
   return (
-    <div className="relative box-border max-w-[330px] w-screen overflow-hidden z-50 bg-white h-screen rounded-tl-lg rounded-bl-lg pl-6 pt-6 pr-12 pb-[120px] overflow-y-scroll -left-2.5 font-sans text-navGrey">
-      <nav className="flex mb-8 text-darkGrey ">
-        <div className="flex">
+    <div className="fixed top-0 right-0 box-border w-[330px] overflow-hidden z-[60] bg-white h-screen rounded-tl-lg rounded-bl-lg pl-6 pt-6 pr-12 pb-[120px] overflow-y-scroll font-sans text-navGrey">
+      <nav className="flex mb-8 text-darkGrey cursor-pointer">
+        <div className="flex" onClick={() => setCloseModAcademy(true)}>
           <CarrotRight className="rotate-90" />
           Back
         </div>
@@ -172,10 +179,11 @@ function MobileNavMA() {
           Author Credits
         </a>
       </div>
-      <div className="fixed top-0 right-0 m-6">
-        <CloseX />
+
+      <div className="fixed right-0 bottom-0 p-6 h-[120px] w-[330px] flex justify-center flex-col z-[80] bg-white rounded-bl-lg">
+        <MobileNavBtn />
       </div>
-      <MobileNavBtn />
+      {back}
     </div>
   );
 }

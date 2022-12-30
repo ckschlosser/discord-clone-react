@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import DiscordImg from "./icons/DiscordImg";
 import MobileNav from "./MobileNav";
+import CloseX from "./icons/CloseImg";
 
 function Nav() {
   const [showMenu, setShowMenu] = useState(false);
 
   let menu;
   let menuMask;
+  let close;
 
   if (showMenu) {
     menu = <MobileNav />;
@@ -15,6 +17,14 @@ function Nav() {
         className="z-50 top-0 left-0 bg-black/30 w-full h-full fixed"
         onClick={() => setShowMenu(false)}
       ></div>
+    );
+    close = (
+      <button
+        className="fixed top-0 right-0 m-6 z-[100]"
+        onClick={() => setShowMenu(false)}
+      >
+        <CloseX />
+      </button>
     );
   }
 
@@ -26,25 +36,28 @@ function Nav() {
         </a>
       </div>
       <ul className="hidden lg:flex lg:text-white lg:gap-x-12">
-        <a href="/#">
+        <a href="https://discord.com/download" className="hover:underline">
           <li>Download</li>
         </a>
-        <a href="/#">
+        <a href="https://discord.com/nitro" className="hover:underline">
           <li>Nitro</li>
         </a>
-        <a href="/#">
+        <a href="https://discord.com/servers" className="hover:underline">
           <li>Discover</li>
         </a>
-        <a href="/#">
+        <a href="https://discord.com/safetycenter" className="hover:underline">
           <li>Safety</li>
         </a>
-        <a href="/#">
+        <a
+          href="https://support.discord.com/hc/en-us"
+          className="hover:underline"
+        >
           <li>Support</li>
         </a>
-        <a href="/#">
+        <a href="https://discord.com/blog" className="hover:underline">
           <li>Blog</li>
         </a>
-        <a href="/#">
+        <a href="https://discord.com/careers" className="hover:underline">
           <li>Careers</li>
         </a>
       </ul>
@@ -69,6 +82,7 @@ function Nav() {
       </div>
       {menuMask}
       {menu}
+      {close}
     </nav>
   );
 }
