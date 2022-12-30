@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import DiscordImg from "./icons/DiscordImg";
-import CloseX from "./icons/CloseImg";
 import CarrotRight from "./icons/CarrotRight";
 import MobileNavBtn from "./icons/MobileNavBtn";
 import MobileNavSafety from "./MobileNavSafety";

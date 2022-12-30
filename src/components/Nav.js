@@ -6,6 +6,10 @@ import CloseX from "./icons/CloseImg";
 function Nav() {
   const [showMenu, setShowMenu] = useState(false);
 
+  showMenu
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
+
   let menu;
   let menuMask;
   let close;
