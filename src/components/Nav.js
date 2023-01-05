@@ -35,7 +35,7 @@ function Nav() {
   return (
     <nav className="container min-w-full px-6 md:px-10 h-20 flex justify-between items-center bg-heroBlue z-30 font-cabin">
       <div className="flex">
-        <a href="/#">
+        <a href="https://discord.com">
           <DiscordImg fill="white" />
         </a>
       </div>
