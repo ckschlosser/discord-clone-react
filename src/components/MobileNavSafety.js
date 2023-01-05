@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CloseX from "./icons/CloseImg";
 import CarrotRight from "./icons/CarrotRight";
 import MobileNavBtn from "./icons/MobileNavBtn";
 import MobileNav from "./MobileNav";
